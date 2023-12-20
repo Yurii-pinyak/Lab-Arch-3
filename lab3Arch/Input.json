@@ -1,0 +1,125 @@
+{
+  "ports": [
+    {
+      "id": 0,
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "container": [0, 1, 2]
+    },
+    {
+      "id": 1,
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "container": []
+    },
+    {
+      "id": 2,
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "container": []
+    },
+    {
+      "id": 3,
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "container": []
+    }
+  ],
+
+  "containers": [
+    {
+      "id": 0,
+      "type": "basic",
+      "items": [
+        {
+          "id": 0,
+          "weight": 100.0,
+          "count": 5,
+          "type": "small"
+        },
+        {
+          "id": 1,
+          "weight": 250.0,
+          "count": 20,
+          "type": "small"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "weight": 3500,
+      "type": "heavy",
+      "items": [
+        {
+          "id": 0,
+          "weight": 100.0,
+          "count": 5,
+          "type": "heavy"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "weight": 3500,
+      "type": "heavy",
+      "items": [
+        {
+          "id": 0,
+          "weight": 100.0,
+          "count": 5,
+          "type": "heavy"
+        }
+      ]
+    }
+  ],
+
+  "ships": [
+    {
+      "id": 0,
+      "fuel": 80000.0,
+      "port": 0,
+      "totalWeightCapacity": 12000,
+      "maxNumberOfAllContainers": 15,
+      "maxNumberOfBasicContainers": 4,
+      "maxNumberOfHeavyContainers": 6,
+      "maxNumberOfRefrigeratedContainers": 4,
+      "maxNumberOfLiquidContainers": 3,
+      "fuelConsumptionPerKM": 10.5
+    },
+    {
+      "id": 1,
+      "fuel": 90000.0,
+      "port": 0,
+      "totalWeightCapacity": 12000,
+      "maxNumberOfAllContainers": 15,
+      "maxNumberOfBasicContainers": 4,
+      "maxNumberOfHeavyContainers": 6,
+      "maxNumberOfRefrigeratedContainers": 4,
+      "maxNumberOfLiquidContainers": 3,
+      "fuelConsumptionPerKM": 10.5
+    }
+  ],
+
+  "actions": [
+    {
+      "action": "load",
+      "containers": [0, 1],
+      "ship": 0
+    },
+    {
+      "action": "load",
+      "containers": [2],
+      "ship": 0
+    },
+    {
+      "action": "sail",
+      "port": 1,
+      "ship": 0
+    },
+    {
+      "action": "unload",
+      "containers": [0],
+      "ship": 0
+    }
+  ]
+}
